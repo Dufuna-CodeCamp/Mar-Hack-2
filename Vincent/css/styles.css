@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: unset;
+}
+
+:root {
+    --blue--: #13a8bd;
+    --orange--: #f39711;
+    --white--: #FBF8F8;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flexbox-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: unset;
+    color: #00001a;
+    /* font-size: small; */
+}
+
+.space {
+    width: 100%;
+    height: 10%;
+}
+
+section {
+    margin-top: 2%;
+    padding: 0 0.5%;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.wrapper {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--white--);
+}
+
+.top-header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    background-color: var(--white--);
+    /* background-color: rgb(34, 34, 34); */
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.096);
+    z-index: 2;
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav {
+    width: 70%;
+    height: 100%;
+    justify-content: right;
+}
+
+.nav {
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+
+.top-navLinks {
+    width: 14.2%;
+    font-size: medium;
+    list-style-type: none;
+    justify-content: right;
+}
+
+.get-started {
+    width: 20%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top-nav-btn {
+    padding: 3% 6%;
+    color: var(--white--);
+    background: linear-gradient(to bottom right, #13a8db, rgba(0, 0, 255, 0.767));
+    font-size: small;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 500ms;
+}
+
+.top-nav-btn:hover {
+    background: linear-gradient(to bottom right , #f39711, #f39711);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.452);
+}
+
+section.hero {
+    height: 87%;
+    width: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    /* justify-content: right; */
+    animation-name: slider;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.hero-content {
+    color: white;
+    background-color: rgba(47, 48, 48, 0.438);
+    padding: 4%;
+    font-size: xx-large;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 40%;
+}
+
+.why-join-tech {
+    margin-top: 2%;
+    padding: 2% 8%;
+    height: 90%;
+    font-size: large;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: rgba(128, 128, 128, 0.205);
+}
+
+.heading {
+    width: 100%;
+    font-size: x-large;
+    justify-content: center;
+}
+
+h2.heading {
+    width: 100%;
+}
+
+.career {
+    width: 100%;
+    height: 100%;
+    padding: 0 8%;
+    /* background-color: #00001a; */
+}
+
+ul.career-list {
+    width: 100%;
+    height: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li.career-card {
+    width: 31%;
+    height: 45%;
+    list-style-type: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.397);
+    transition: .4s;
+}
+
+li.career-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px rgb(128, 128, 128);
+}
+
+.career-card a {
+    padding: 0 10%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-image {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-image img {
+    width: 70%;
+    height: 90%;
+}
+
+.about-us {
+    padding: 2% 6%;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(128, 128, 128, 0.205);
+}
+
+.about-us p {
+    padding: 2%;
+    width: 100%;
+    height: 30%;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.profile-cards {
+    padding-top: 5%;
+    height: 65%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    width: 30%;
+    height: 96%;
+}
+
+.profile-card a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card-avatar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card-avatar img {
+    width: 50%;
+    /* height: 100%; */
+    border-radius: 200px;
+    background-color: gray;
+}
+
+.profile-card-header {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card-details {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-partners {
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+.blog {
+    width: 100%;
+    height: 90%;
+}
+
+
+
+.contact-us {
+    padding: 0 12%;
+    width: 100%;
+    height: 90%;
+    background-color: #B2ABAB;
+}
+
+.contact-form {
+    width: 100%;
+    height: 86%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-group {
+    width: 46%;
+    height: 100%;
+    justify-content: center;
+}
+
+.form-group input {
+    margin: auto;
+    padding: 1%;
+    width: 90%;
+    height: 10%;
+    border-radius: 12px;
+    border: unset;
+}
+
+.form-group select {
+    margin: auto;
+    padding: 1%;
+    width: 90%;
+    height: 10%;
+    background-color: var(--white--);
+    border-radius: 12px;
+    border: unset;
+}
+
+label {
+    font-size: large;
+    font-weight: 600;
+}
+
+#submit {
+    width: unset;
+    padding: 0 10%;
+    font-size: large;
+    border-radius: 50px;
+    font-weight: 600;
+    color: var(--white--);
+    background-color: var(--blue--);
+}
+
+#submit:hover {
+    background-color: var(--orange--);
+    transition: .4s;
+}
+
+.waitlist-cont {
+    width: 100%;
+    height: 50%;
+}
+
+.waitlist-cont input {
+    height: 20%;
+}
+
+.waitlist-cont button {
+    margin: auto;
+    width: unset;
+    padding: 3% 7%;
+    font-size: large;
+    border-radius: 50px;
+    font-weight: 600;
+    color: var(--white--);
+    background-color: var(--blue--);
+    border: unset;
+}
+
+
+.waitlist-cont button:hover {
+    background-color: var(--orange--);
+    transition: .4s;
+}
+
+footer {
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+
+
+
+
+@keyframes slider {
+    0% {
+        background: url("../images/adeolu-eletu-omKdUQ9R3Zo-unsplash.jpg");
+        background-size: cover;
+    }
+    25% {
+        background: url("../images/christina-wocintechchat-com-HocFQHhGjDE-unsplash.jpg");
+        background-size: cover;
+    }
+    50% {
+        background: url("../images/collins-lesulie-0VEDrQXxrQo-unsplash.jpg");
+        background-size: cover;
+    }
+    75% {
+        background: url("../images/emmanuel-ikwuegbu-xdS9XEoKBLY-unsplash.jpg");
+        background-size: cover;
+    }
+    100% {
+        background: url("../images/adeolu-eletu-omKdUQ9R3Zo-unsplash.jpg");
+        background-size: cover;
+    }
+}
