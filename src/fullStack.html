@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css">
-        <title>Home Page</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Full Stack Development</title>
+</head>
 
 <body>
     <div class="wrapper">
-
+        <div id="header"></div>
         <header class="top-header flexbox">
             <div class="logo flexbox">
                 <a href="homepage.html">
@@ -19,13 +20,13 @@
             </div>
             <nav class="top-nav flexbox">
                 <ul class="nav flexbox">
-                    <li class="top-navLinks flexbox"><a href="#space1">Why join Tech?</a></li>
-                    <li class="top-navLinks flexbox"><a href="#space2">Career Paths</a></li>
-                    <li class="top-navLinks flexbox"><a href="#space3">About Us</a></li>
-                    <li class="top-navLinks flexbox"><a href="#space4">Partners</a></li>
-                    <li class="top-navLinks flexbox"><a href="#space5">Blog</a></li>
-                    <li class="top-navLinks flexbox"><a href="#space6">Contact Us</a></li>
-                    <li class="top-navLinks flexbox"><a href="#space7">Resources</a></li>
+                    <li class="top-navLinks flexbox"><a href="./homepage.html#space1" class="btn btn-center">Why join Tech?</a></li>
+                    <li class="top-navLinks flexbox"><a href="./homepage.html#space2" class="btn btn-center">Career Paths</a></li>
+                    <li class="top-navLinks flexbox"><a href="./homepage.html#space3" class="btn btn-center">About Us</a></li>
+                    <li class="top-navLinks flexbox"><a href="./homepage.html#space4" class="btn btn-center">Partners</a></li>
+                    <li class="top-navLinks flexbox"><a href="./homepage.html#space5" class="btn btn-center">Blog</a></li>
+                    <li class="top-navLinks flexbox"><a href="#space6" class="btn btn-center">Contact Us</a></li>
+                    <li class="top-navLinks flexbox"><a href="#" class="btn btn-center">Resources</a></li>
                 </ul>
             </nav>
             <div class="get-started flexbox">
@@ -37,7 +38,7 @@
                 </a>
             </div>
         </header>
-        
+
         <div id="space" class="space">
 
         </div>
@@ -50,7 +51,7 @@
         <div id="space1" class="space">
 
         </div>
-    
+
         <section class="why-join-tech flexbox-wrap">
             <h2 class="heading flexbox">What Do Full Stack Developers Really Do?</h2>
             <ul>
@@ -78,16 +79,17 @@
             <p class="our-advisors-infor">Our Advisors have years of experience working at leading tech companies in various roles including Full Stack Development. Get advice from industry leading Professionals.</p>
             <ul class="career-list flexbox-wrap">
                 <li class="career-card">
-                    <a href="fullStack.html">
+                    <a href="#">
                         <div class="career-image">
                             <img src="./images/undraw_font_re_efri.svg" alt="">
                         </div>
                         <h2>Mwansa Mwansa</h2>
                         <p>The most powerful and result-oriented Developer at Stanbic Bank</p>
+                        <p>Product Manager at Msquared</p>
                     </a>
                 </li>
                 <li class="career-card">
-                    <a href="fullStack.html">
+                    <a href="#">
                         <div class="career-image">
                             <img src="./images/undraw_font_re_efri.svg" alt="">
                         </div>
@@ -201,18 +203,18 @@
             <h2 class="heading flexbox">Contact Us</h2>
             <div class="contact-form flexbox-wrap">
                 <form action="#" class="form-group flexbox-wrap message">
-                        <label for="message">Leave a message</label>
-                        <input type="text" name="full_name" placeholder="Full Name">
-                        <input type="email" name="email_address" placeholder="Email address">
-                        <select name="subject" id="subject">
+                    <label for="message">Leave a message</label>
+                    <input type="text" name="full_name" placeholder="Full Name">
+                    <input type="email" name="email_address" placeholder="Email address">
+                    <select name="subject" id="subject">
                             <option value="default" selected>Choose subject</option>
-                            <option value="lorem">lorem</option>
-                            <option value="lorem">lorem</option>
-                            <option value="lorem">lorem</option>
-                            <option value="lorem">lorem</option>
+                            <option value="lorem">Product Management</option>
+                            <option value="lorem">Product Design</option>
+                            <option value="lorem">Dev Ops</option>
+                            <option value="lorem">Mobile App Development</option>
                         </select>
-                        <textarea name="message_box" id="message" cols="48" rows="10" id="textarea"></textarea>
-                        <input type="submit" name="submit" id="submit">
+                    <textarea name="message_box" id="message" cols="48" rows="10" id="textarea"></textarea>
+                    <input type="submit" name="submit" id="submit">
                 </form>
                 <form action="#" class="form-group flexbox-wrap waitlist">
                     <div class="waitlist-cont flexbox-wrap">
