@@ -143,7 +143,7 @@ section.hero {
     font-size: large;
     font-weight: 600;
     line-height: 1.5;
-    background-color: rgba(128, 128, 128, 0.205);
+    background-color: rgba(128, 128, 128, 0.082);
 }
 
 .heading {
@@ -211,7 +211,7 @@ li.career-card:hover {
     padding: 2% 6%;
     width: 100%;
     height: 90%;
-    background-color: rgba(128, 128, 128, 0.205);
+    background-color: rgba(204, 204, 204, 0.205);
 }
 
 .about-us p {
@@ -276,6 +276,7 @@ li.career-card:hover {
 }
 
 .our-partners {
+    padding: 4% 0.5%;
     width: 100%;
     height: 50%;
 }
@@ -300,14 +301,17 @@ li.career-card:hover {
     padding: 0 12%;
     width: 100%;
     height: 90%;
-    background-color: #B2ABAB;
+    background-color: rgb(224, 224, 224);
 }
 
 .contact-form {
+    padding: 2%;
     width: 100%;
     height: 86%;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #ffffffe0;
+    border-radius: 12px;
 }
 
 .form-group {
@@ -318,11 +322,12 @@ li.career-card:hover {
 
 .form-group input {
     margin: auto;
-    padding: 1%;
+    padding: 0 5%;
     width: 90%;
     height: 10%;
     border-radius: 12px;
-    border: unset;
+    border: 3px solid rgba(128, 128, 128, 0.308);
+    font-size: large;
 }
 
 .form-group select {
@@ -332,12 +337,16 @@ li.career-card:hover {
     height: 10%;
     background-color: var(--white--);
     border-radius: 12px;
-    border: unset;
+    border: 3px solid rgba(128, 128, 128, 0.315);
+    font-size: large;
 }
 
 label {
+    width: 100%;
     font-size: large;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 
 #submit {
@@ -348,6 +357,8 @@ label {
     font-weight: 600;
     color: var(--white--);
     background-color: var(--blue--);
+    border: unset;
+    box-shadow: 0px 0px 5px black;
 }
 
 #submit:hover {
@@ -361,7 +372,7 @@ label {
 }
 
 .waitlist-cont input {
-    height: 20%;
+    height: 19.7%;
 }
 
 .waitlist-cont button {
@@ -374,6 +385,7 @@ label {
     color: var(--white--);
     background-color: var(--blue--);
     border: unset;
+    box-shadow: 0px 0px 5px black;
 }
 
 
